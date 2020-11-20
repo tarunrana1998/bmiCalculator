@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly ;
+    padding-bottom: 50px;
+    height: 25px;
+    block-size: 5%;
+    
+    
+}
+
+.heading{
+    text-align: center;
+}
+h1{
+    color: white;
+   
+    font-family: 'Goldman', cursive !important;
+    font-size: 50px;
+    
+    
+}
+header{
+    display: flex;
+}
+.reset{
+    justify-content: right;
+    margin-right: 0px;
+    position: absolute;
+    right: 20;
+    top: 20;
+    font-size: 20px;
+
+}
+
+body{
+    background-image: url('./back.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+    
+}
+footer ,a {
+    color: white;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    
+}
+.reveal{
+
+    font-size: 25px;
+    background-color: rgb(168, 219, 127);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+   
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  input {
+      border-radius: 20px;
+      text-align: center;
+      line-height: 25px;
+      font-size: larger;
+     
+     
+  }
+.answer{
+
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: xx-large;
+    justify-content: left;
+
+  }

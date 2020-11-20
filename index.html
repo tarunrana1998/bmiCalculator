@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="./logo.png" alt="">
+        <button class="reset" onclick="location.reload()" >Reset</button>
+
+    </div>
+    
+    <h1 class="heading">Body Mass Index Calculator</h1>
+    <div class="container">
+        <input id="height" type="text" placeholder="Enter height in metres"></input>
+    <input id="weight" type="text" placeholder="Enter weight in kilograms"> </input>
+    
+    </div>
+    
+    <div class="buttons">
+        <button class="reveal" onclick=bmi()  id="bmi" >Check BMI</button>
+    
+    </div>
+    
+    
+
+    <script>
+        
+
+        
+        function bmi(){
+            var height = document.getElementById("height").value;
+        var weight = document.getElementById("weight").value;
+        var Bmi;
+        Bmi = (weight/(height*height));
+        document.getElementById("bmi").innerHTML = Bmi.toFixed(2);
+        }
+    </script>
+    <footer>
+        <div class="icons">
+
+        </div>
+        <div>
+            &copy;1998-2020
+        </div>
+        <p>
+            <a href="mailto:tarunrana1997@gmail.com">tarunrana1997@gmail.com</a>
+        </p>
+     </footer>
+</body>
+</html>
