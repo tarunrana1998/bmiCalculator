@@ -7,13 +7,14 @@
     justify-content: space-evenly ;
     padding-bottom: 50px;
     height: 25px;
-    block-size: 5%;
+    block-size: 8%;
     
     
 }
 
 .heading{
     text-align: center;
+    
 }
 h1{
     color: white;
@@ -47,6 +48,7 @@ body{
 footer ,a {
     color: white;
     
+    
 }
 .buttons{
     display: flex;
@@ -67,13 +69,14 @@ footer ,a {
 
 
 footer {
-    position: fixed;
+    position :fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: black;
     color: white;
     text-align: center;
+    padding-bottom: 10px;
   }
   
   input {
@@ -99,17 +102,19 @@ footer {
    margin-top: 40px;
     justify-content: center;
     font-size: larger;
-    height: 20%;
-    width: 50%;
-    padding-left: 20px;
+    height:max-content;
+    widows: 50%;;
+    
     padding-top: 5px;
     padding-bottom: 5px;
   
     text-align: center;
     margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 55px;
     border-radius: 20px;
     color: rgb(208, 238, 240) !important;
-    opacity: 90%;  
+    opacity: 80%;  
     background-color: rgb(33, 76, 141);
 }
 
