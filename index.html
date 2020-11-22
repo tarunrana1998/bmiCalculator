@@ -23,7 +23,7 @@
      <h1 class="heading">Body Mass Index Calculator</h1>
     <div class="container">
        
-        <input id="height" type="text" placeholder="Enter height in metres"></input>
+    <input id="height" type="text" placeholder="Enter height in metres"></input>
     <input id="weight" type="text" placeholder="Enter weight in kilograms"> </input>
     
     </div>
@@ -36,7 +36,7 @@
     <div class="facts">
 
         <div class="facts-text">
-            <p>Underweight - Less than 18.5</p>
+        <p>Underweight - Less than 18.5</p>
         <p>Healthy  - Between 18.5  &  24.9</p>
         <p>Overweight  -  Between 25  & 29.9</p>
         <p>Obese   -  Greater than 30</p>
@@ -53,11 +53,48 @@
 
         
         function bmi(){
-            var height = document.getElementById("height").value;
+        
+        var height = document.getElementById("height").value;
         var weight = document.getElementById("weight").value;
         var Bmi;
         Bmi = (weight/(height*height));
-        document.getElementById("bmi").innerHTML = Bmi.toFixed(2);
+        
+        
+            // Checking if values are in limit
+
+        if ((height<0) || (height>=3))
+        {
+            alert("Height should be between 0 to 3 metres");
+        }
+        else if ((weight<0) || (weight>450))
+        {
+            alert("Weight should be between 0 to 450Kg");
+        }
+        else{
+             // Checking the Body Type
+            var type;
+
+        if(Bmi<18.5)
+        type = "Underweight";
+        else if ((Bmi>=18.5) && (Bmi<=24.9))
+        type = "Healthy";
+        else if ((Bmi>=25) && (Bmi<=29.9))
+        type = "Overweight";
+        else if (Bmi>=30)
+        type = "Obese";
+
+        // Showing The Result if conditions are fulfilled
+
+            document.getElementById("bmi").innerHTML = Bmi.toFixed(2) + " => " + type;
+        }
+
+
+           
+        
+
+        
+
+
         }
     </script>
     <footer>
